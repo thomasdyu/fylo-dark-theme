@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Testimonial = (props) => {
     const Container = styled.div`
-        width: 350px;
+        max-width: 350px;
         background-color: hsl(219, 30%, 18%);
         padding: 2rem;
         border-radius: 3px;
@@ -11,6 +11,11 @@ const Testimonial = (props) => {
         p {
             font-size: 0.8rem;
             margin-bottom: 1rem;
+        }
+
+        @media only screen and (max-width: 912px) {
+            margin: 1rem 0;
+            max-width: 400px;
         }
     `;
 

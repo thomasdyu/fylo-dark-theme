@@ -5,28 +5,32 @@ import quote from '../images/bg-quotes.png';
 
 const Testimonials = () => {
     const TestimonialsSection = styled.section`
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 8rem 2rem;
+        z-index: 10;
+    `;
+
+    const TestimonialContainer = styled.div`
         display: flex;
         justify-content: space-evenly;
         align-items: center;
 
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 8rem 2rem;
         position: relative;
-        z-index: 10;
-
-        > img {
-            position: absolute;
-            top: 95px;
-            left: 23px;
-            z-index: -10;
-        }
 
         @media only screen and (max-width: 912px) {
             flex-direction: column;
 
-            width: 100%;
-        } ;
+            width: fit-content;
+            margin: 0 auto;
+        }
+
+        > img {
+            position: absolute;
+            top: -20px;
+            left: -10px;
+            z-index: -10;
+        }
     `;
 
     //Create Testimony for each entry
@@ -44,8 +48,10 @@ const Testimonials = () => {
 
     return (
         <TestimonialsSection>
-            <img src={quote} alt='quote icon' />
-            {Data.map(createTestimonials)}
+            <TestimonialContainer>
+                <img src={quote} alt='quote icon' />
+                {Data.map(createTestimonials)}
+            </TestimonialContainer>
         </TestimonialsSection>
     );
 };
