@@ -27,9 +27,15 @@ const Testimonials = () => {
 
         > img {
             position: absolute;
-            top: -20px;
-            left: -10px;
+            top: -35px;
+            left: 5px;
             z-index: -10;
+
+            @media only screen and (max-width: 912px) {
+                width: 40px;
+                top: -10px;
+                left: -10px;
+            }
         }
     `;
 

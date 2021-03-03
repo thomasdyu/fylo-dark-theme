@@ -15,12 +15,25 @@ const Footer = () => {
         img {
             height: 2.4rem;
         }
+
+        @media only screen and (max-width: 912px) {
+            img {
+                height: 3.5rem;
+            }
+        }
     `;
 
     const Wrapper = styled.div`
         display: flex;
 
         margin-top: 1.8rem;
+
+        @media only screen and (max-width: 912px) {
+            flex-direction: column;
+            justify-content: flex-start;
+
+            margin-top: 3rem;
+        }
     `;
 
     const Location = styled.div`
@@ -32,6 +45,15 @@ const Footer = () => {
         p {
             margin-left: 1rem;
         }
+
+        @media only screen and (max-width: 912px) {
+            width: 60%;
+            margin-bottom: 2rem;
+        }
+
+        @media only screen and (max-width: 500px) {
+            width: 100%;
+        }
     `;
 
     const Contact = styled.div`
@@ -40,6 +62,13 @@ const Footer = () => {
 
         width: 25%;
         margin: 0 auto;
+
+        @media only screen and (max-width: 912px) {
+            justify-content: flex-start;
+
+            margin: 0 0 3rem 0;
+            width: 100%;
+        }
     `;
 
     const ContactWrapper = styled.div`
@@ -66,6 +95,22 @@ const Footer = () => {
             color: #ffffff;
             text-transform: capitalize;
         }
+
+        @media only screen and (max-width: 912px) {
+            align-content: flex-start;
+
+            height: auto;
+            width: 100%;
+            margin-bottom: 4rem;
+
+            a {
+                margin-bottom: 1rem;
+
+                &:nth-child(4) {
+                    margin-bottom: 2rem;
+                }
+            }
+        }
     `;
 
     const Social = styled.div`
@@ -74,13 +119,18 @@ const Footer = () => {
 
         img {
             width: 1.4rem;
-            margin-left: 1rem;
+            margin: 0 0.5rem;
             cursor: pointer;
             transition: 0.3s ease;
         }
 
         img:hover {
             transform: scale(1.2);
+        }
+
+        @media only screen and (max-width: 912px) {
+            width: 100%;
+            text-align: center;
         }
     `;
 
