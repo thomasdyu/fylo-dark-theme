@@ -6,7 +6,7 @@ import quote from '../images/bg-quotes.png';
 const Testimonials = () => {
     const TestimonialsSection = styled.section`
         max-width: 1200px;
-        margin: 0 auto;
+        margin: 0 auto 12rem auto;
         padding: 8rem 2rem;
         z-index: 10;
     `;

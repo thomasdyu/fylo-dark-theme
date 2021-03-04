@@ -98,7 +98,7 @@ const Content = () => {
     `;
 
     return (
-        <Content>
+        <Content className='container'>
             <ContentContainer>
                 <img src={image} alt='illustration' />
                 <TextContainer>

@@ -15,7 +15,7 @@ const CardContainer = styled.div`
 
     width: 80%;
     margin: 0 auto;
-    padding: 4rem 0;
+    padding-top: 4rem;
 `;
 
 const Cards = () => {

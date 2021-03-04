@@ -4,7 +4,7 @@ import Cards from './components/Cards';
 import Footer from './components/Footer';
 import Content from './components/Content';
 import Testimonials from './components/Testimonials';
-import Cta from './components/Cta';
+import CtaWrapper from './components/CtaWrapper';
 import './App.css';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
             <Cards />
             <Content />
             <Testimonials />
-            <Cta />
+            <CtaWrapper />
             <Footer />
         </div>
     );

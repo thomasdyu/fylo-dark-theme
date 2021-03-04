@@ -39,10 +39,10 @@ const MenuItem = styled.li`
     cursor: pointer;
     margin-left: 3rem;
     text-transform: capitalize;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 
     &:hover {
-        font-weight: 700;
+        color: rgb(101, 226, 217);
     }
 
     @media only screen and (max-width: 520px) {

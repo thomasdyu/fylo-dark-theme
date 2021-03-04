@@ -138,7 +138,9 @@ const Footer = () => {
         <footer>
             <div className='container'>
                 <Logo>
-                    <img src={logo} alt='logo' />
+                    <a href='#'>
+                        <img src={logo} alt='logo' />
+                    </a>
                 </Logo>
                 <Wrapper>
                     <Location>

@@ -10,9 +10,10 @@ const Section = styled.div`
     background-color: hsl(217, 28%, 15%);
     text-align: center;
     margin: 0 auto;
+    padding: 3rem 0;
 
     img {
-        width: 70%;
+        max-width: 70%;
     }
 `;
 
