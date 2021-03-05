@@ -24,7 +24,7 @@ const Heading = styled.h3`
 const Card = (props) => {
     return (
         <Container>
-            <Img src={props.img} alt='' />
+            <Img src={props.img} alt='profile image' />
             <Heading>{props.heading}</Heading>
             <p>{props.text}</p>
         </Container>

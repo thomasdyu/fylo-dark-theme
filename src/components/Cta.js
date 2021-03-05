@@ -109,7 +109,7 @@ const Cta = () => {
                 would be happy to help you.
             </p>
             <div>
-                <CtaInput type='text' placeholder='email@exampl.com' />
+                <CtaInput type='email' placeholder='email@exampl.com' />
                 <CtaButton>Get Started For Free</CtaButton>
             </div>
         </CtaContainer>
